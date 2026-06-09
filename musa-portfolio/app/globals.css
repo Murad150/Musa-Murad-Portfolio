@@ -61,6 +61,16 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Custom Cursor — hide default on mouse devices, keep native on form elements */
+@media (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+  input, textarea, select, [contenteditable="true"] {
+    cursor: auto !important;
+  }
+}
+
 /* Film Grain Effect */
 body::after {
   content: "";
@@ -106,9 +116,17 @@ body::after {
   box-shadow: 0 0 20px var(--glow-color);
 }
 
-/* Text Gradient */
+/* Text Gradient — Blue to Cyan */
 .text-gradient {
   background: linear-gradient(135deg, #2563EB, var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Text Gradient — Orange to Blue */
+.text-gradient-orange-blue {
+  background: linear-gradient(135deg, #F97316, #2563EB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -733,3 +733,212 @@ https://react.dev/link/hydration-mismatch
 ✓ Compiled in 165ms
  GET / 200 in 620ms (next.js: 522ms, application-code: 98ms)
  GET / 200 in 627ms (next.js: 328ms, application-code: 300ms)
+✓ Compiled in 1144ms
+ GET / 200 in 693ms (next.js: 647ms, application-code: 45ms)
+ GET / 200 in 638ms (next.js: 484ms, application-code: 154ms)
+✓ Compiled in 365ms
+✓ Compiled in 2.9s
+ GET / 200 in 4.0s (next.js: 900ms, application-code: 3.1s)
+ GET / 200 in 4.2s (next.js: 1013ms, application-code: 3.2s)
+ GET / 200 in 2.9s (next.js: 489ms, application-code: 2.5s)
+ GET / 200 in 3.3s (next.js: 256ms, application-code: 3.0s)
+ GET / 200 in 2.7s (next.js: 206ms, application-code: 2.5s)
+ GET / 200 in 2.7s (next.js: 85ms, application-code: 2.6s)
+ GET / 200 in 2.7s (next.js: 316ms, application-code: 2.4s)
+ GET / 200 in 1579ms (next.js: 831ms, application-code: 748ms)
+ GET / 200 in 1584ms (next.js: 146ms, application-code: 1438ms)
+ GET / 200 in 1582ms (next.js: 589ms, application-code: 993ms)
+ GET / 200 in 1591ms (next.js: 748ms, application-code: 843ms)
+ GET / 200 in 148ms (next.js: 36ms, application-code: 112ms)
+ GET / 200 in 3.0s (next.js: 15ms, application-code: 3.0s)
+ GET / 200 in 1012ms (next.js: 11ms, application-code: 1001ms)
+✓ Finished writing to filesystem cache in 11.1s
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+    at completeWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+    at runWithFiberInDEV (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at completeUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopSync (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+[browser] Encountered a script tag while rendering React component. Scripts inside React components are never executed when rendering on the client. Consider using template tag instead (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template). 
+    at completeWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+    at runWithFiberInDEV (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at completeUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopSync (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9449:40)
+    at renderRootSync (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9433:13)
+    at performWorkOnRoot (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9098:47)
+    at performWorkOnRootViaSchedulerTask (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6945:102)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <DevRootHTTPAccessFallbackBoundary>
+      <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+        <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} forbidden={undefined} ...>
+          <RedirectBoundary>
+            <RedirectErrorBoundary router={{...}}>
+              <Head>
+              <__next_root_layout_boundary__>
+                <LoadingBoundaryProvider loading={[...]}>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <html lang="en" className="dark" suppressHydrationWarning={true}>
+                        <head>
+                        <body className="inter_f2d8...">
+                          <Cursor>
+                            <motion.div className="pointer-ev..." style={{x:{...},y:{...}, ...}}>
++                             <div
++                               className="pointer-events-none fixed z-[99999]"
++                               style={{opacity:0,transform:"translateX..."}}
++                               ref={function useMotionRef.useCallback}
++                             >
+-                             <nav
+-                               className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass border-b ..."
+-                               style={{transform:"translateY..."}}
+-                             >
+                            ...
+                          ...
+              ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3318:56)
+    at beginWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:918)
+    at runWithFiberInDEV (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+    at div (<anonymous>)
+    at useRender (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_0qd48ql._.js:5331:191)
+    at MotionDOMComponent (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_0qd48ql._.js:6028:215)
+    at Cursor (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/components_1kbcaml._.js:663:215)
+    at RootLayout (app\layout.tsx:88:9)
+  86 |         className={`${inter.variable} ${jetbrains.variable} font-body antialiased`}
+  87 |       >
+> 88 |         <Cursor />
+     |         ^
+  89 |         <Navbar />
+  90 |         {children}
+  91 |       </body>
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <LoadingBoundaryProvider loading={[...]}>
+                      <SegmentViewNode type="layout" pagePath="layout.tsx">
+                        <SegmentTrieNode>
+                        <link>
+                        <script>
+                        <script>
+                        <script>
+                        <RootLayout>
+                          <html lang="en" className="dark" suppressHydrationWarning={true}>
+                            <head>
+                            <body
+                              className="inter_f2d81e59-module__dt-NXW__variable jetbrains_mono_b08bc454-module__keGuW..."
+-                             data-new-gr-c-s-check-loaded="14.1299.0"
+-                             data-gr-ext-installed=""
+                            >
+                              <Cursor>
+                                <motion.div className="pointer-ev..." style={{x:{...},y:{...}, ...}}>
++                                 <div
++                                   className="pointer-events-none fixed z-[99999]"
++                                   style={{opacity:0,transform:"translateX..."}}
++                                   ref={function useMotionRef.useCallback}
++                                 >
+-                                 <nav
+-                                   className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass borde..."
+-                                   style={{transform:"translateY..."}}
+-                                 >
+                                ...
+                              ...
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3318:56)
+    at beginWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6758:918)
+    at runWithFiberInDEV (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at performUnitOfWork (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64)
+    at div (<anonymous>)
+    at useRender (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_0qd48ql._.js:5331:191)
+    at MotionDOMComponent (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/node_modules_0qd48ql._.js:6028:215)
+    at Cursor (file://D:/offical portfolio/musa-portfolio/.next/dev/static/chunks/components_1kbcaml._.js:663:215)
+    at RootLayout (app\layout.tsx:88:9)
+  86 |         className={`${inter.variable} ${jetbrains.variable} font-body antialiased`}
+  87 |       >
+> 88 |         <Cursor />
+     |         ^
+  89 |         <Navbar />
+  90 |         {children}
+  91 |       </body>
+✓ Compiled in 7s
+✓ Compiled in 3.1s
+ GET / 200 in 3.4s (next.js: 2.8s, application-code: 582ms)
+ GET / 200 in 3.4s (next.js: 1760ms, application-code: 1676ms)
+✓ Finished filesystem cache database compaction in 17.3s
+✓ Compiled in 9.3s
+✓ Compiled in 633ms
+✓ Compiled in 1020ms
+✓ Compiled in 336ms
+ GET / 200 in 192ms (next.js: 18ms, application-code: 173ms)
+ GET / 200 in 799ms (next.js: 422ms, application-code: 377ms)
+✓ Compiled in 3.7s
+ GET / 200 in 3.1s (next.js: 2.6s, application-code: 533ms)
+ GET / 200 in 3.1s (next.js: 1743ms, application-code: 1316ms)
+✓ Compiled in 1014ms
+ GET / 200 in 1096ms (next.js: 1011ms, application-code: 85ms)
+ GET / 200 in 1049ms (next.js: 660ms, application-code: 389ms)
+✓ Compiled in 9.8s
+ GET / 200 in 24.5s (next.js: 23.2s, application-code: 1284ms)
+ GET / 200 in 25.7s (next.js: 20.4s, application-code: 5.3s)
+✓ Compiled in 735ms
+ GET / 200 in 882ms (next.js: 764ms, application-code: 118ms)
+ GET / 200 in 913ms (next.js: 541ms, application-code: 372ms)
+✓ Compiled in 557ms
+ GET / 200 in 861ms (next.js: 581ms, application-code: 280ms)
+ GET / 200 in 930ms (next.js: 863ms, application-code: 67ms)
